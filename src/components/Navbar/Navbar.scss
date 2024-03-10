@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+    .left{
+        flex: 3;
+        background-color: red;
+    }
+    
+    .right{
+        flex: 2;
+        background-color: blue;
+    }
+}
