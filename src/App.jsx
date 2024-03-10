@@ -1,8 +1,11 @@
 import React from 'react'
+import "./layout.scss"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className='layout'>
+      Sameer sattar
+    </div>
   )
 }
 
