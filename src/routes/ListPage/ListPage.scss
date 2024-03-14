@@ -4,13 +4,15 @@
     
     .listContainer{
         flex: 3;
-
+        height: 100%;
         .wrapper {
             display: flex;
+            height: 100%;
             flex-direction: column;
             overflow-y: scroll;
             gap: 50px;
             padding-right: 50px;
+            padding-bottom: 50px;
         }
     }
     .mapContainer{

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Map = () => {
+const Map = ({items}) => {
   return (
     <div>Map</div>
   )
