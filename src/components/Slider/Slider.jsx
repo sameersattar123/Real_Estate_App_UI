@@ -1,8 +1,26 @@
 import React from 'react'
+import "./Slider.scss"
 
-const Slider = () => {
+const Slider = ({images}) => {
   return (
-    <div>Slider</div>
+    <div className='slider'>
+      <div className="bigImage">
+        <img src={images[0]} alt="" />
+      </div>
+      <div className="smallImages">
+        {
+          images.slice(1).map((image , index) => {
+            return(
+              <img
+              src={image}
+              alt='images'
+              key={index}
+              />
+            )
+          })
+        }
+      </div>
+    </div>
   )
 }
 
