@@ -1,78 +1,171 @@
-.singlePage{
-    display: flex;
+@import "../../responsive.scss";
+
+.singlePage {
+  display: flex;
+  height: 100%;
+  .details {
+    flex: 3;
     height: 100%;
-    .details{
-        flex: 3;
-        // background-color: rgb(0, 255, 115);
-        .wrapper{
-            padding: 50px;
-            
-            .info{
-                margin-top: 20px;
-                .top{
-                    display: flex;
-                    justify-content: space-between;
-                    .post{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                        h1{
-                            font-weight: 400;
-                        }
-                        .address{
-                            display: flex;
-                            align-items: center;
-                            gap: 5px;
-                            color: #888;
-                            font-size: 14px;
+    overflow-y: scroll;
+    .wrapper {
+      padding: 50px;
 
-                            img{
-                                width: 16px;
-                                height: 16px;
-                            }
-                        }
-                        .price{
-                            padding: 5px;
-                            background-color:  rgba(254, 205, 81, 0.438);;
-                            font-weight: 300;
-                            width: max-content;
-                            border-radius: 5px;
-                            font-size: 20px;
-
-                        }
-                    }
-                    .user{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 0 50px;
-                        gap: 20px;
-                        border-radius: 10px;
-                        background-color: rgba(254, 205, 81, 0.209);
-                        font-weight: 600;
-                        img{
-                            width: 50px;
-                            height: 50px;
-                            border-radius: 50%;
-                            object-fit: cover;
-                        }
-                    }
-                }
-                .bottom{
-                    margin-top: 50px;
-                    line-height: 20px;
-                    color: #555;
-                }
+      .info {
+        margin-top: 20px;
+        .top {
+          display: flex;
+          justify-content: space-between;
+          .post {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1 {
+              font-weight: 400;
             }
+            .address {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              color: #888;
+              font-size: 14px;
+
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+            .price {
+              padding: 5px;
+              background-color: rgba(254, 205, 81, 0.438);
+              font-weight: 300;
+              width: max-content;
+              border-radius: 5px;
+              font-size: 20px;
+            }
+          }
+          .user {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 50px;
+            gap: 20px;
+            border-radius: 10px;
+            background-color: rgba(254, 205, 81, 0.209);
+            font-weight: 600;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
         }
-    }
-    .features{
-        flex: 2;
-        // background-color: aqua;
-        .wrapper{
-            padding: 0 20px;    
+        .bottom {
+          margin-top: 50px;
+          line-height: 20px;
+          color: #555;
         }
-        
+      }
     }
+  }
+  .features {
+    flex: 2;
+    background-color: #fcf5f3;
+    height: 100%;
+    overflow-y: scroll;
+    .wrapper {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .feature {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        img {
+          background-color: rgba(254, 205, 81, 0.209);
+        }
+
+        .featureText {
+          span {
+            font-weight: bold;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .listVertical {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .listHorizontal {
+        display: flex;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+        justify-content: space-between;
+      }
+
+      .sizes {
+        display: flex;
+        justify-content: space-between;
+
+        .size {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background-color: white;
+          padding: 10px;
+          border-radius: 5px;
+        }
+      }
+
+      .mapContainer {
+        width: 100%;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          background-color: white;
+          border: 1px solid #fece51;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-bottom: 20px;
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
 }
