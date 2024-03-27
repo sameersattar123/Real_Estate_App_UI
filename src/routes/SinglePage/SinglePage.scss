@@ -3,10 +3,21 @@
 .singlePage {
   display: flex;
   height: 100%;
+
+  @include md {
+    flex-direction: column;
+    overflow: scroll;
+  }
   .details {
     flex: 3;
     height: 100%;
     overflow-y: scroll;
+
+    @include md {
+      flex:  none;
+      height: max-content;
+      margin-bottom: 50px;
+    }
     .wrapper {
       padding: 50px;
 
@@ -74,6 +85,13 @@
     background-color: #fcf5f3;
     height: 100%;
     overflow-y: scroll;
+
+    
+    @include md {
+      flex:  none;
+      height: max-content;
+      margin-bottom: 50px;
+    }
     .wrapper {
       padding: 0 20px;
       display: flex;
@@ -130,6 +148,10 @@
       .sizes {
         display: flex;
         justify-content: space-between;
+
+        @include lg{
+          font-size: 12px;
+        }
 
         .size {
           display: flex;
