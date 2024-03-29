@@ -1,6 +1,9 @@
+@import "../../responsive.scss";
+
 .card {
     display: flex;
     gap: 20px;
+
     .imageContainer{
         flex: 2;
         height: 200px;
@@ -10,6 +13,9 @@
             object-fit: cover;
             border-radius: 10px;
         }
+    @include sm{
+    display: none;
+    }
     }
     .textContainer{
         flex: 3;
